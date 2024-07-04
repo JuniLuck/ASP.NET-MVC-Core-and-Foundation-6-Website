@@ -1,0 +1,46 @@
+﻿
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASP.Net MVC Foundation Site</title>
+    <link rel="stylesheet" href="lib/foundation/css/foundation.css" />
+</head>
+<body>
+    <header style="background-color:#E6E6E6">
+        <div class="grid-y" style="width:1280px; margin-left:auto; margin-right:auto">
+        <div class="cell"><img src="~/lib/images/opticron-logo.png"/></div>
+            <div class="top-bar" id="head-menu">
+            <div class="top-bar-left">
+                <ul class="dropdown menu " style="font-size:small">
+                    <li><a href="#0" style="color:black">Our Products</a></li>
+                    <li><a href="#0" style="color:black">Where to Buy</a></li>
+                    <li><a href="#0" style="color:black">News & Reviews</a></li>
+                    <li><a href="#0" style="color:black">Help & Support</a></li>
+                    <li><a href="#0" style="color:black">My Opticron</a></li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu">
+                        <li><input type="search" placeholder="My Opticron...">
+                        <button type="button" class="button"><img</button></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    @RenderBody()
+
+    <footer>
+
+    </footer>
+
+    <script src="lib/foundation/js/vendor/jquery.js"></script>
+    <script src="lib/foundation/js/vendor/what-input.js"></script>
+    <script src="lib/foundation/js/vendor/foundation.js"></script>
+    <script src="lib/foundation/js/app.js"></script>
+</body>
+</html>
