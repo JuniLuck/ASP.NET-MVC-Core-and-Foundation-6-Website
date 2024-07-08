@@ -9,17 +9,31 @@
     <link rel="stylesheet" href="lib/foundation/css/foundation.css" />
     <link rel="stylesheet" href="lib/foundation/css/app.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <style>
         .topStyle {
             color: black;
             font-size: small;
+            font-family: "Yu Gothic UI"
+        }
+        .botStyle {
+            color: white;
+            font-family: "Yu Gothic UI";
+        }
+        .media {
+            border-right: solid;
+            border-color: grey;
+            border-right-width: 2px;
+        }
+        right {
+            float:right;
         }
     </style>
 </head>
 
 <body>
-    <header style="background-color:#E6E6E6">
+    <header style="background-color:#E6E7E8">
         <div class="grid-container" style="width:1280px; margin-left:auto; margin-right:auto; padding-bottom:15px; padding-top:20px">
             <grid-x><img src="lib/images/opticron-logo.png" /></grid-x>
             <div class="grid-x">
@@ -54,8 +68,38 @@
 
     @RenderBody()
 
-    <footer>
-
+    <footer style="background-color:#BBBDBF">
+        <div class="grid-container" style="width:1280px; padding-top:40px; padding-bottom:40px">
+            <div class="grid-x">
+                <div class="cell botStyle large-6 grid-y">
+                    <div class="cell large-11" style="font-size:medium">
+                        <b>Opticron</b> Unit 21, Titan Court, Laporte Way, Luton, Bedforshire, LU4 8EF, UK
+                    </div>
+                    <div class="cell large-1" style="vertical-align:text-bottom; font-size:small">
+                        <a style="color:white">Site map</a> / 
+                        <a style="color:white">Terms</a> / 
+                        <a style="color:white">Privacy Policy</a> / 
+                        <a style="color:white">Site by Verto</a>
+                    </div>
+                </div>
+                <div class="cell large-2"></div>
+                <div class="cell botStyle large-3 grid-y" style="padding-left:30px"> 
+                    <div class="cell" style="font-size:xx-large; padding-top:0; line-height:0.7">
+                        call <right><b>01582 726522</b></right>
+                    </div>
+                    <div class="cell" style="font-size:large">
+                        <email><b>email us</b> <right>sales@opticron.co.uk</right></email>
+                    </div>
+                    <div class="grid-x" style="margin-top:30px; font-size:x-large; text-align:center">
+                        <div class="cell large-auto media"><i class="fa fa-facebook"></i></div>
+                        <div class="cell large-auto media"><i class="fa fa-twitter"></i></div>
+                        <div class="cell large-auto media"><i class="fa fa-linkedin"></i></div>
+                        <div class="cell large-auto media"><i class="fa fa-youtube"></i></div>
+                        <div class="cell large-auto"><i class="fa fa-google-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="lib/foundation/js/vendor/jquery.js"></script>

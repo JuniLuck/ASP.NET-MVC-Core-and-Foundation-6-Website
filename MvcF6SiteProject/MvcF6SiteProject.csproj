@@ -32,4 +32,8 @@
     <PackageReference Include="foundation-sites" Version="6.5.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\images\" />
+  </ItemGroup>
+
 </Project>
