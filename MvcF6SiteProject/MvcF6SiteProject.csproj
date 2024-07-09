@@ -26,14 +26,18 @@
     <None Include="wwwroot\lib\jquery\dist\jquery.js" />
     <None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
     <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+    <None Include="wwwroot\lib\slick\config.rb" />
+    <None Include="wwwroot\lib\slick\fonts\slick.svg" />
+    <None Include="wwwroot\lib\slick\slick-theme.less" />
+    <None Include="wwwroot\lib\slick\slick-theme.scss" />
+    <None Include="wwwroot\lib\slick\slick.js" />
+    <None Include="wwwroot\lib\slick\slick.less" />
+    <None Include="wwwroot\lib\slick\slick.min.js" />
+    <None Include="wwwroot\lib\slick\slick.scss" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="foundation-sites" Version="6.5.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\lib\images\" />
   </ItemGroup>
 
 </Project>

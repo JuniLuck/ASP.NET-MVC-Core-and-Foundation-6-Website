@@ -8,6 +8,8 @@
     <title>ASP.Net MVC Foundation Site</title>
     <link rel="stylesheet" href="lib/foundation/css/foundation.css" />
     <link rel="stylesheet" href="lib/foundation/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -26,6 +28,27 @@
             border-color: grey;
             border-right-width: 2px;
         }
+        .cardStyle {
+            border: unset;
+            height: inherit;
+        }
+        .cardHead {
+            font-size: x-large;
+            color: #707070;
+            font-family: "Yu Gothic UI";
+            padding-bottom: 7%;
+        }
+        .cardButton {
+            width: 60%;
+            text-align: left;
+            font-family: "Yu Gothic UI";
+            font-weight: bold;
+            color: white;
+            background: Green;
+        }
+        .cardButton:hover {
+            background: DarkGreen
+        }
         right {
             float:right;
         }
@@ -35,32 +58,32 @@
 <body>
     <header style="background-color:#E6E7E8">
         <div class="grid-container" style="width:1280px; margin-left:auto; margin-right:auto; padding-bottom:15px; padding-top:20px">
-            <grid-x><img src="lib/images/opticron-logo.png" /></grid-x>
-            <div class="grid-x">
-                <div class="top-bar large-7" id="head-menu">
-                    <div class="top-bar-left" style="margin-left:-30px">
-                        <ul class="dropdown menu align-spaced">
-                            <li><a href="#0" class="topStyle">Our Products</a></li>
-                            <li><a href="#0" class="topStyle">Where to Buy</a></li>
-                            <li><a href="#0" class="topStyle">News & Reviews</a></li>
-                            <li><a href="#0" class="topStyle">Help & Support</a></li>
-                            <li><a href="#0" class="topStyle">My Opticron</a></li>
-                        </ul>
-                    </div>
+            <img src="lib/images/opticron-logo.png" />
+            <div class="top-bar grid-x" id="head-menu">
+                <div class="cell top-bar-left large-7" style="margin-left:-60px">
+                    <ul class="dropdown menu align-spaced">
+                        <li><a href="#0" class="topStyle">Our Products</a></li>
+                        <li><a href="#0" class="topStyle">Where to Buy</a></li>
+                        <li><a href="#0" class="topStyle">News & Reviews</a></li>
+                        <li><a href="#0" class="topStyle">Help & Support</a></li>
+                        <li><a href="#0" class="topStyle">My Opticron</a></li>
+                    </ul>
                 </div>
-                <div class="large-5">
-                    <div class="top-bar-right">
-                        <ul class="menu align-right">
+                <div class="cell top-bar-right large-5">
+                    <right>
+                        <ul class="menu">
                             <li style="height:min-content">
                                 <div class="input-group">
-                                    <input class="input-group-field topStyle" type="url" placeholder="My Opticron..." style="height:35px; width:max-content;">
+                                    <input class="input-group-field topStyle" type="url" placeholder="My Opticron..." style="height:35px">
                                     <div class="input-group-button">
-                                        <button class="button" value="Submit" style="background-color:grey; padding:3px; width:35px; height:35px"> <i class="material-icons" style="font-size:20px">search</i> </button>
+                                        <button class="button" value="Submit" style="background-color:grey; padding:3px; width:35px; height:35px"> 
+                                            <i class="material-icons" style="font-size:20px">search</i> 
+                                        </button>
                                     </div>
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </right>
                 </div>
             </div>
         </div>
@@ -75,11 +98,11 @@
                     <div class="cell large-11" style="font-size:medium">
                         <b>Opticron</b> Unit 21, Titan Court, Laporte Way, Luton, Bedforshire, LU4 8EF, UK
                     </div>
-                    <div class="cell large-1" style="vertical-align:text-bottom; font-size:small">
-                        <a style="color:white">Site map</a> / 
-                        <a style="color:white">Terms</a> / 
-                        <a style="color:white">Privacy Policy</a> / 
-                        <a style="color:white">Site by Verto</a>
+                    <div class="cell large-1" style="font-size:small">
+                        <a class="botStyle">Site map</a> / 
+                        <a class="botStyle">Terms</a> /
+                        <a class="botStyle">Privacy Policy</a> /
+                        <a class="botStyle">Site by Verto</a>
                     </div>
                 </div>
                 <div class="cell large-2"></div>
@@ -90,12 +113,12 @@
                     <div class="cell" style="font-size:large">
                         <email><b>email us</b> <right>sales@opticron.co.uk</right></email>
                     </div>
-                    <div class="grid-x" style="margin-top:30px; font-size:x-large; text-align:center">
-                        <div class="cell large-auto media"><i class="fa fa-facebook"></i></div>
-                        <div class="cell large-auto media"><i class="fa fa-twitter"></i></div>
-                        <div class="cell large-auto media"><i class="fa fa-linkedin"></i></div>
-                        <div class="cell large-auto media"><i class="fa fa-youtube"></i></div>
-                        <div class="cell large-auto"><i class="fa fa-google-plus"></i></div>
+                    <div class="grid-x" style="margin-top:30px; font-size:x-large; text-align:center;">
+                        <div class="cell large-auto media"><a><i class="fa fa-facebook" style="color:white"></i></a></div>
+                        <div class="cell large-auto media"><a><i class="fa fa-twitter" style="color:white"></i></a></div>
+                        <div class="cell large-auto media"><a><i class="fa fa-linkedin" style="color:white"></i></a></div>
+                        <div class="cell large-auto media"><a><i class="fa fa-youtube" style="color:white"></i></a></div>
+                        <div class="cell large-auto"><a><i class="fa fa-google-plus" style="color:white"></i></a></div>
                     </div>
                 </div>
             </div>
@@ -106,5 +129,25 @@
     <script src="lib/foundation/js/vendor/what-input.js"></script>
     <script src="lib/foundation/js/vendor/foundation.js"></script>
     <script src="lib/foundation/js/app.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel').slick({
+                autoplay: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 300,
+                dots: true,
+                dotsClass: "dotsRight",
+                adaptiveHeight: false,
+                centerMode: true,
+                variableWidth: true,
+              });
+            });
+    </script>
+
 </body>
 </html>
