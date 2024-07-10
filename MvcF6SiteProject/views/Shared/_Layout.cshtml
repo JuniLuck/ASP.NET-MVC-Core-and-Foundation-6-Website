@@ -41,17 +41,14 @@
         .cardImg {
             display: block;
             height: 225px;
-            max-width: inherit;
             position: relative;
-            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: inherit;
             clip: auto;
             overflow: hidden;
-        }
-        .cardImage img {
-            margin: 0 auto;
-            max-height: 100%;
-            max-width: 100%;
-            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
         }
         .cardBody {
             height: 125px;
@@ -72,17 +69,33 @@
             background: DarkGreen
         }
         .cardBody2 {
-            height: 125px;
+            height: 110px;
             font-family: "Yu Gothic";
             font-weight: 500;
             font-size: larger;
             text-align: center;
             align-content: center;
-            height: 110px
+        }
+        .productCardBody {
+            font-family: "Yu Gothic";
+            font-weight: 500;
+            font-size: larger;
+            text-align: center;
+            align-content: center;
+            padding-top: 10px;
+            color: dimgrey;
         }
         .productCardStyle {
-            border: ;
-            height: 
+            border: unset;
+            width: 260px;
+            margin: 21px;
+        }
+        .headerStyle {
+            font-size: xx-large;
+            color: #707070;
+            font-family: "Yu Gothic UI";
+            padding-top: 30px;
+            padding-bottom: 40px;
         }
         right {
             float:right;
@@ -126,7 +139,7 @@
 
     @RenderBody()
 
-    <footer style="background-color:#BBBDBF">
+    <footer style="background-color:#BBBDBF; width:auto">
         <div class="grid-container" style="width:1280px; padding-top:40px; padding-bottom:40px">
             <div class="grid-x">
                 <div class="cell botStyle large-6 grid-y">
@@ -188,9 +201,9 @@
                 speed: 300,
                 arrows: true,
                 adaptiveHeight: false,
-                centerMode: true,
                 variableWidth: true,
-            });
+                infinite: true,
+              });
             });
     </script>
 
